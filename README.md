@@ -5,7 +5,7 @@ The Weather App is a React-based application built with [Vite](https://vitejs.de
 It features a clean, responsive design using [Material UI](https://mui.com/) components to enhance user experience on both desktop and mobile devices.
 
 ## Live Demo
-Experience the live demo here: [Live Demo URL](https://live-demo-url.com)
+Experience the live demo here: [https://weather24live.vercel.app](https://weather24live.vercel.app/)
 
 ## Features
 - **City Weather Search:** Type the name of any city to fetch current weather details.
