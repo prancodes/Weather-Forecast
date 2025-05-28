@@ -1,0 +1,175 @@
+/* Reset and base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #f7fafd;
+  color: #222;
+}
+
+/* Main container */
+.weather-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 1rem 1rem 1rem;
+  background: #f7fafd;
+}
+
+/* Title */
+.weather-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #2a4365;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+}
+
+/* Form */
+.weather-form {
+  display: flex;
+  gap: 0.5rem;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.07);
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.weather-input .MuiOutlinedInput-root {
+  background: #f3f6fa;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.weather-search-btn {
+  background: #2a4365 !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  padding: 0.7rem 1.5rem !important;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08) !important;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.weather-search-btn:hover {
+  background: #1a365d !important;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.13) !important;
+}
+
+/* Disabled state styles */
+.weather-search-btn:disabled {
+  background: rgba(42, 67, 101, 0.5) !important;
+  color: #edf2f7 !important;
+  pointer-events: none;
+  box-shadow: none !important;
+}
+
+/* Card */
+.weather-card {
+  background: #fff !important;
+  border-radius: 18px !important;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.09) !important;
+  width: 100%;
+  max-width: 400px !important;
+  margin-top: 2rem;
+  transition: box-shadow 0.2s;
+}
+
+.weather-card:hover {
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.13) !important;
+}
+
+.weather-card-content {
+  padding: 1.5rem 2rem !important;
+}
+
+.weather-icon{
+  object-fit: cover;
+  background: #f3f6fa;
+  border-radius: 12px 12px 0 0;
+  height: 216px;
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+.weather-icon .MuiCardMedia-root{
+  object-fit: cover;
+  background: #f3f6fa;
+  border-radius: 12px 12px 0 0;
+  height: 216px;
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+/* City and description */
+.weather-city {
+  margin: 0;
+  color: #2a4365;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.weather-description {
+  display: block;
+  margin: 0.7rem auto 1rem auto;
+  font-size: 1.05rem;
+  color: #3182ce;
+  font-weight: 500;
+  text-transform: capitalize;
+  background: #e6f0fa;
+  padding: 0.4em 1.2em;
+  border-radius: 1em;
+  width: fit-content;
+  letter-spacing: 0.2px;
+}
+
+/* Weather details */
+.weather-details {
+  margin-top: 1.2rem;
+}
+
+.weather-details h2 {
+  margin: 0.5em 0;
+  font-size: 1.08rem;
+  color: #2a4365;
+  font-weight: 600;
+  background: #f3f6fa;
+  border-radius: 8px;
+  padding: 0.7em 1em;
+  letter-spacing: 0.1px;
+}
+
+/* Error message */
+h3[style*="color: red"] {
+  color: #e53e3e !important;
+  background: #fff5f5;
+  border-radius: 8px;
+  padding: 1em 1.5em;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .weather-title {
+    font-size: 1.8rem;
+  }
+
+  .weather-form {
+    padding: 0.8rem 0.8rem;
+    max-width: 94%;
+  }
+
+  .weather-card-content {
+    padding: 1rem !important;
+  }
+}
